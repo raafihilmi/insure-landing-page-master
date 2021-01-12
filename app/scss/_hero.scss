@@ -1,12 +1,21 @@
 .hero {
   background-color: $color-primary;
-  background-image: url(/images/bg-pattern-intro-left-mobile.svg),
-    url(/images/bg-pattern-intro-right-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: left 60%, right 125%;
   color: #fff;
   padding-bottom: 4rem;
   width: 100%;
+
+  &::before {
+    content: url(/images/bg-pattern-intro-left-mobile.svg);
+    position: absolute;
+    left: 0;
+    top: 32rem;
+  }
+  &::after {
+    content: url(/images/bg-pattern-intro-right-mobile.svg);
+    position: absolute;
+    right: 0;
+    top: 43rem;
+  }
   &__img {
     position: relative;
     right: 21px;
@@ -43,9 +52,21 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    background-image: url(/images/bg-pattern-intro-left-desktop.svg),
-      url(/images/bg-pattern-intro-right-desktop.svg);
-    background-position: left 286%, right -241%;
+    // background-image: url(/images/bg-pattern-intro-left-desktop.svg),
+    //   url(/images/bg-pattern-intro-right-desktop.svg);
+    // background-position: left 286%, right -241%;
+    &::before {
+      content: url(/images/bg-pattern-intro-left-desktop.svg);
+      position: absolute;
+      left: 0;
+      top: 33rem;
+    }
+    &::after {
+      content: url(/images/bg-pattern-intro-right-desktop.svg);
+      position: absolute;
+      right: 0;
+      top: 74px;
+    }
 
     &__wrapper {
       display: flex;
@@ -68,7 +89,7 @@
       margin-right: 1rem;
       h1 {
         font-size: 5rem;
-        font-weight: bold;
+        font-weight: normal;
         line-height: 0.8;
 
         .border {

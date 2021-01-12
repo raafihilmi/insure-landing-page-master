@@ -1,5 +1,4 @@
 .work {
-  margin-bottom: 18rem;
   &__cta {
     text-align: center;
     background-color: $color-primary;
@@ -28,10 +27,11 @@
       align-items: center;
       padding: 4rem;
       .title {
-        font-size: 4.5rem;
+        font-size: 4rem;
         margin: 0;
-        width: 60%;
-        line-height: 0.9;
+        width: 55%;
+        line-height: 1.1;
+        font-weight: normal;
       }
       .cta {
       }
