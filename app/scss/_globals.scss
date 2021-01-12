@@ -1,0 +1,79 @@
+// FONT
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* GLOBAL */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $color-primary;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'DM Serif Display', serif;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  max-width: 1170px;
+  width: 90vw;
+  margin: 0 auto;
+
+  @media screen and(min-width: 800px) {
+    width: 80vw;
+  }
+}
+.btn {
+  padding: 1rem;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  font-weight: border;
+
+  &:hover {
+    background: #fff;
+    color: $color-primary;
+  }
+}
+.active {
+  &:hover {
+    color: #fff;
+  }
+}
